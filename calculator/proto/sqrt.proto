@@ -1,0 +1,11 @@
+syntax = "proto3";
+package calculator;
+option go_package="joyful.go/go-grpc/calculator/proto";
+
+message SqrtRequest {
+    int64 number = 1;
+}
+
+message SqrtResponse {
+    int64 result = 1;
+}
